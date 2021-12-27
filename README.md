@@ -1,20 +1,11 @@
 # *Assembly Calculator*
 
-We introduce to you  version of simple assembly calculator  :
+## Intro about the Project
+Our team worked together to build a Two-operand simple calculator using assembly language. <br/>
+The program performs arithmetic operations like addition, subtraction, multiplication, and division.
 
-### A. Two-operand simple calculator
 
-Let's go in some details <br/>
-
-## A. Two-operand simple calculator
-
-### Introduction
-
-The two-operand simple calculator is an assembly program that solves arithmatic operations such that add , div ,sub,multi,.....
-
-### Features and Functionalities
-It supports the basic four arithmatic operations using symbols ( + , - , * , / ).
-## *Member of the team *
+## Members of the team 
 
 - [Amr Mehanna](https://github.com/Amrmehanna)
 - [Ahmed Mahmoud Mahmoud ](https://github.com/AhmedMahmoud125)
