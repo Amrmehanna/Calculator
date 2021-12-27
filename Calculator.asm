@@ -10,3 +10,10 @@ includelib\Irvine\irvine32.lib
 
 
 
+startprogram          db " start the two operand assembly calculator ", 0
+endprogram            db " we are happy to use our two operand calculator", 0
+
+
+
+
+
