@@ -7,6 +7,12 @@ includelib\masm32\lib\user32.lib
 includelib\Irvine\kernel32.lib
 includelib\Irvine\irvine32.lib
 
-.data
+## *Member of the team *
+
+- [Amr Mehna](https://github.com/Amrmehanna)
+- [Ahmed Mahmoud Mahmoud ](https://github.com/AhmedMahmoud125)
+- [Mina Bekheet](https://github.com/)
+- [Mahmoud Sayed](https://github.com/)
+
 
 
