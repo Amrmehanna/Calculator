@@ -14,3 +14,9 @@ The two-operand simple calculator is an assembly program that solves arithmatic 
 
 ### Features and Functionalities
 It supports the basic four arithmatic operations using symbols ( + , - , * , / ).
+## *Member of the team *
+
+- [Amr Mehanna](https://github.com/Amrmehanna)
+- [Ahmed Mahmoud Mahmoud ](https://github.com/AhmedMahmoud125)
+- [Mina Bekheet](https://github.com/MinaBekheet)
+- [Mahmoud Sayed](https://github.com/MahmoudSayed77)
