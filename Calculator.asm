@@ -25,9 +25,9 @@ result2                    db " result is: ", 0
  
 addition_sign              DB '+', 0
 subtraction_sign           DB '-', 0
-division_sign              db '/', 0
-muliplication_sign         db '*', 0
-space_sign                 db ' ', 0
+division_sign              DB '/', 0
+muliplication_sign         DB '*', 0
+space_sign                 DB ' ', 0
 equal_sign                 db '=', 0
 parth_sign1                db '(', 0
 parh_sign2                 db ')', 0
