@@ -16,8 +16,8 @@ The program performs arithmetic operations like addition, subtraction, multiplic
 -assembly programming languages
 -masm32(compiler)
 -visual studio code 
-### Limitations
+## Program limitations
 
-  1. Dosen't support floating point numbers(fractions)
-  2. Can't print out the result of multiplication of a 32-bit numbers 
+  1. Does not allow fractions
+  2. I'm unable to print the result of a 32-bit numeric multiplication. 
   hint :(destination of multiplication required the double size of the two register multiplied which is no to be supported )
