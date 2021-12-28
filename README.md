@@ -11,7 +11,8 @@ The program performs arithmetic operations like addition, subtraction, multiplic
 - [Ahmed Mahmoud Mahmoud ](https://github.com/AhmedMahmoud125)
 - [Mina Bekheet](https://github.com/MinaBekheet)
 - [Mahmoud Sayed](https://github.com/MahmoudSayed77)
-#tools
-assembly programming languages
-masm32(compiler)
-visual studio code 
+
+##tools
+-assembly programming languages
+-masm32(compiler)
+-visual studio code 
