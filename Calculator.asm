@@ -11,7 +11,7 @@ includelib\Irvine\irvine32.lib
 .data
 
 startprogram               DB " start the two operand assembly calculator ", 0
-endprogram                 db " we are happy to use our two operand calculator", 0
+endprogram                 DB " we are happy to use our two operand calculator", 0
 
 operand1                   DD
 operand2                   DD
