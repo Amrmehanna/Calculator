@@ -13,7 +13,16 @@ includelib\Irvine\irvine32.lib
 startprogram               db " start the two operand assembly calculator ", 0
 endprogram                 db " we are happy to use our two operand calculator", 0
 
+operand1                   DD
+operand2                   DD
+operator                   db
+result1                    DD
 
+recall1                    db "please enter the fisrt number, or (f/c) to exit", 0
+recall2                    db "please enter the second number, or (f/c) to exit " 0
+recall3                    db " please choose an operation (+, -, *, /), or (f/c) to exit ", 
+result2                    db " result is: ", 0
+ 
 addition_sign              db '+', 0
 subtraction_sign           db '-', 0
 division_sign              db '/', 0
@@ -22,6 +31,9 @@ space_sign                 db ' ', 0
 equal_sign                 db '=', 0
 parth_sign1                db '(', 0
 parh_sign2                 db ')', 0
+
+.code
+
 
 
 
