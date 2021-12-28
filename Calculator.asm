@@ -15,7 +15,7 @@ endprogram                 DB " we are happy to use our two operand calculator",
 
 operand1                   DD
 operand2                   DD
-operator                   db
+operator                   DB
 result1                    DD
 
 recall1                    db "please enter the fisrt number, or (f/c) to exit", 0
