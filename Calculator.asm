@@ -23,8 +23,8 @@ recall2                    db "please enter the second number, or (f/c) to exit 
 recall3                    db " please choose an operation (+, -, *, /), or (f/c) to exit ", 
 result2                    db " result is: ", 0
  
-addition_sign              db '+', 0
-subtraction_sign           db '-', 0
+addition_sign              DB '+', 0
+subtraction_sign           DB '-', 0
 division_sign              db '/', 0
 muliplication_sign         db '*', 0
 space_sign                 db ' ', 0
