@@ -28,9 +28,9 @@ subtraction_sign           DB '-', 0
 division_sign              DB '/', 0
 muliplication_sign         DB '*', 0
 space_sign                 DB ' ', 0
-equal_sign                 db '=', 0
-parth_sign1                db '(', 0
-parh_sign2                 db ')', 0
+equal_sign                 DB '=', 0
+parth_sign1                DB '(', 0
+parh_sign2                 DB ')', 0
 
 .code
 
