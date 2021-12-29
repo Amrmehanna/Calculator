@@ -2,7 +2,8 @@
 
 ## Intro about the Project
 Our team worked together to build a Two-operand simple calculator using assembly language. <br/>
-The program performs arithmetic operations like addition, subtraction, multiplication, and division.
+The program performs arithmetic operations such as  addition, subtraction, multiplication, and division.
+the symbols of  arithmatic operations  ( + , - , * , / ).
 
 
 
