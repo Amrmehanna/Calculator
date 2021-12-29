@@ -10,18 +10,18 @@ includelib\Irvine\irvine32.lib
 
 .data
 
-startprogram               DB " start the two operand assembly calculator ", 0
+startprogram               DB " Welcome to the assembly calculator Porgram ", 0
 endprogram                 DB " we are happy to use our two operand calculator", 0
 
-operand1                   DD
-operand2                   DD
-operator                   DB
-result1                    DD
+operand1                   DD ?
+operand2                   DD ?
+operator                   DB ?
+result1                    DD ?
 
-recall1                    db "please enter the fisrt number, or (f/c) to exit", 0
-recall2                    db "please enter the second number, or (f/c) to exit " 0
-recall3                    db " please choose an operation (+, -, *, /), or (f/c) to exit ", 
-result2                    db " result is: ", 0
+recall1                    DB "Enter the fisrt number, or (f/c) to exit", 0
+recall2                    DB "Enter the second number, or (f/c) to exit " 0
+recall3                    DB "Choose an operation (+, -, *, /), or (f/c) to exit ", 
+result2                    DB " result is: ", 0
  
 addition_sign              DB '+', 0
 subtraction_sign           DB '-', 0
