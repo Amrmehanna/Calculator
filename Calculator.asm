@@ -33,6 +33,13 @@ parth_sign1                DB '(', 0
 parh_sign2                 DB ')', 0
 
 .code
+ main proc
+ start ;
+ call  crlf
+ lea edx,start program
+ call write string
+ call crlf
+ call crlf
 
 
 
