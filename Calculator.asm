@@ -40,6 +40,13 @@ parh_sign2                 DB ')', 0
  call write string
  call crlf
  call crlf
+ get_operand1;
+ lea edx,recall1
+ call writestring
+ mov ecx,15
+ call readstring
+ jmp check_opreand1_validity
+ 
 
 
 
