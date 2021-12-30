@@ -22,6 +22,12 @@ recall1                    DB "Enter the fisrt number, or (f/c) to exit", 0
 recall2                    DB "Enter the second number, or (f/c) to exit " 0
 recall3                    DB "Choose an operation (+, -, *, /), or (f/c) to exit ", 
 result2                    DB " result is: ", 0
+operand_msg                DB"<invalid number ,try another trial>",0
+operator_msg               DB"< invalid operator ,try another trial>",0
+overflow_msg0              DB"<result is large,   try another trial>",0
+overflow _msg1             DB"<first number is large,try another trial>",0
+overflow_msg2              DB"<secand number is large,try another trial>",0
+zero Div_msg               DB"<Divison by zero is invalid number>",0
  
 addition_sign              DB '+', 0
 subtraction_sign           DB '-', 0
@@ -33,19 +39,8 @@ parth_sign1                DB '(', 0
 parh_sign2                 DB ')', 0
 
 .code
- main proc
- start ;
- call  crlf
- lea edx,start program
- call write string
- call crlf
- call crlf
- get_operand1;
- lea edx,recall1
- call writestring
- mov ecx,15
- call readstring
- jmp check_opreand1_validity
+ 
+ 
  
 
 
