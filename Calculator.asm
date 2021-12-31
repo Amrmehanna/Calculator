@@ -48,6 +48,12 @@ parth_sign1                DB '(', 0
 parh_sign2                 DB ')', 0
 
 .code
+
+main PROC
+
+start :
+
+
  
  
  
