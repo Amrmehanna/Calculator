@@ -116,14 +116,14 @@ get_operator:
 
 ; Do the  Additionopertion opertion 
 
-     label1_addition  process:
+     addition_process:
 		mov 	eax,first_operand                               ; copy the first operand in eax
 		add 	eax , second_operand          			; add the two operands( first_operand  + second_operand) and put the result in eax eax=eax+operand2
 		mov 	result , eax	                                ;put the eax in result 
 				    				
 ; Do the Subtraction opertion 
 
-	label2_subtraction  process:
+	subtraction_process:
 		mov 	eax , first_operand 	     		        ; copy the first operand in eax
 		sub 	eax ,second_operand          			; subtract the second operand from the fisrt operand (first_operand - second_operand) and put the result in eax
 		mov 	result , eax                                    ;put the eax in result 
@@ -133,7 +133,7 @@ get_operator:
 ;Do the Multiplication operation	
 
         
-         label3_multiplication  process:
+        multiplication_process:
 		mov 	eax,first_operand         		        ; copy  thefirst_operand value and put it in  eax
 		mov 	ebx,second_operand         			; copy  thesecond_operand value and put it   ebx
 	        imul    ebx                 				; imul eax, ebx ....result of mul is aduble size of the operand so it store the result in edx-eax=eax*ebx 
@@ -143,7 +143,7 @@ get_operator:
 ;Do the Division operation
 
 
-		label4_division process: 
+		division_process:
 		xor 	edx, edx  		 			; clear edx => will have a most signtific 32bit from 64bit 
 		mov 	eax,first_operand				; get operands  which is 32bit 
 		mov 	ebx, operand2 					; make  the divisble by to ebx 
