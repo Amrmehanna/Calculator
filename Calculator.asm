@@ -81,6 +81,7 @@ get_operator:
 	call	ReadChar					; read the operator from the user to save it in AL
 	mov	operator, al	    				; the character of AL is copied to operator variable 
 	
+; Getting second number
 
      get_second_operand:
      
