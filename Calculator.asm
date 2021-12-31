@@ -149,8 +149,10 @@ get_operator:
 		mov 	ebx, operand2 					; make  the divisble by to ebx 
 		cdq			        			; sign extend 
 		cmp 	ebx , 0h					; check the value of ebx is it zero will make an error 
-		je 	division_by_zero 
-		idiv 	ebx 						; make a div operator 
+		je 	division_by_zero                                ;jump if the divisble equal zero
+		idiv 	ebx                                             ;eax=eax/ebx
+	         						
+		                                                        ; make a div operator 
 		mov 	result, eax                                     ;put the eax in result 
 	
 
