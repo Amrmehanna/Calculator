@@ -53,7 +53,7 @@ main PROC
 
 start :
 call  crlf
-lea edx,start program
+lea edx,startprogram
 call  writestring 
 call  crlf
 call  crlf 
