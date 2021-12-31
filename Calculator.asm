@@ -80,6 +80,27 @@ get_operator:
 	call	WriteString					; write recall3 message
 	call	ReadChar					; read the operator from the user to save it in AL
 	mov	operator, al	    				; the character of AL is copied to operator variable 
+	
+
+     get_second_operand:
+     
+               call	CrLf
+	       call	CrLf
+	       lea      edx, recall2
+	       call	WriteString                                                     ; Writting the recall2 message
+	       lea      edx, second_operandstring 
+	       mov	ecx, 15
+	       call	ReadString                                                       ; Read from the user a 32-bit integer and save it in EAX
+
+	       
+          parsing_first_operand:
+	  
+	        mov   	ecx, second_operand_len 
+    		call  	ParseInteger32
+		mov	second_operand, eax                                              ; The value of EAX is copied to the second operand
+		
+	       
+	       
 
 	
 				    				
