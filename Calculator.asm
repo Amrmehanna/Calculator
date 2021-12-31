@@ -136,7 +136,7 @@ get_operator:
             do_multiplication:
 		mov 	eax,operand1          				; copy  the operand1 value and put it   eax
 		mov 	ebx,operand2          				; copy  the operand2 value and put it   ebx
-	        imul    ebx                 				; imul eax, ebx ....result of mul is aduble size of the operand so it store the result in edx-eax 
+	        imul    ebx                 				; imul eax, ebx ....result of mul is aduble size of the operand so it store the result in edx-eax=eax*ebx 
 		mov 	result, eax                                     ;put the eax in result 
 		
 		
