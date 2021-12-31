@@ -17,8 +17,8 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 ## Tools
 -assembly programming languages <br/>
 -masm32(compiler)<br/>
--visual studio code 
--EMU8086
+-visual studio code<br/> 
+-EMU8086 
 
 ## Members of the team 
 
