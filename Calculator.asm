@@ -52,9 +52,9 @@ parh_sign2                 DB ')', 0
 main PROC
 
 start:
-call	CrLf							
-lea edx,startprogram
-call  writestring 
+call	CrLf                                                  ;spacing to able to reading
+lea edx,startprogram                                          :address of caculcator program will be copied  to EDX registor
+call  writestring                                             ;write calculator program
 call	CrLf	
 call	CrLf							
 
@@ -73,6 +73,18 @@ call	CrLf
 		mov   	ecx, first_operand_len 
     		call  	ParseInteger32
 		mov	first_operand, eax	    				; The value of EAX is copied to the first operand
+		
+get_operator:		
+	call	CrLf			
+	lea	edx, recall3
+	call	WriteString					; write recall3 message
+	call	ReadChar					; read the operator from the user to save it in AL
+	mov	operator, al	    				; the character of AL is copied to operator variable 
+
+	
+				    				
+
+	
 
 
  
