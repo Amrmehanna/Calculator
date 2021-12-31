@@ -13,8 +13,8 @@ includelib\Irvine\irvine32.lib
 startprogram               DB " Welcome to the assembly calculator Porgram ", 0
 endprogram                 DB " we are happy to use our two operand calculator", 0
 
-operand1                   DD ?
-operand2                   DD ?
+first_operand              DD ?
+second_operand2            DD ?
 operator                   DB ?
 result1                    DD ?
 
