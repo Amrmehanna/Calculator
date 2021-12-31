@@ -116,16 +116,16 @@ get_operator:
 
 ; Do the  Additionopertion opertion 
 
-        do_addition:
-		mov 	eax, operand1                                   ; copy the first operand in eax
-		add 	eax , operand2           			; add the two operands( num1  + num2) and put the result in eax eax=eax+operand2
+     label1_addition  process:
+		mov 	eax,first_operand                               ; copy the first operand in eax
+		add 	eax , second_operand          			; add the two operands( first_operand  + second_operand) and put the result in eax eax=eax+operand2
 		mov 	result , eax	                                ;put the eax in result 
 				    				
 ; Do the Subtraction opertion 
 
-	do_subtraction:
-		mov 	eax , operand1 	     				; copy the first operand in eax
-		sub 	eax , operand2           			; subtract the second operand from the fisrt operand ( num1  - num2) and put the result in eax eax=eax-operand2
+	label2_subtraction  process:
+		mov 	eax , first_operand 	     		        ; copy the first operand in eax
+		sub 	eax ,second_operand          			; subtract the second operand from the fisrt operand (first_operand - second_operand) and put the result in eax
 		mov 	result , eax                                    ;put the eax in result 
 		
 		
@@ -133,9 +133,9 @@ get_operator:
 ;Do the Multiplication operation	
 
         
-            do_multiplication:
-		mov 	eax,operand1          				; copy  the operand1 value and put it   eax
-		mov 	ebx,operand2          				; copy  the operand2 value and put it   ebx
+         label3_multiplication  process:
+		mov 	eax,first_operand         		        ; copy  thefirst_operand value and put it in  eax
+		mov 	ebx,second_operand         			; copy  thesecond_operand value and put it   ebx
 	        imul    ebx                 				; imul eax, ebx ....result of mul is aduble size of the operand so it store the result in edx-eax=eax*ebx 
 		mov 	result, eax                                     ;put the eax in result 
 		
@@ -143,18 +143,17 @@ get_operator:
 ;Do the Division operation
 
 
-		do_division: 
+		label4_division process: 
 		xor 	edx, edx  		 			; clear edx => will have a most signtific 32bit from 64bit 
-		mov 	eax, operand1					; get operands  which is 32bit 
+		mov 	eax,first_operand				; get operands  which is 32bit 
 		mov 	ebx, operand2 					; make  the divisble by to ebx 
-		cdq			        			; sign extend 
-		cmp 	ebx , 0h					; check the value of ebx is it zero will make an error 
-		je 	division_by_zero                                ;jump if the divisble equal zero
+		                           
 		idiv 	ebx                                             ;eax=eax/ebx
-	         						
+	        mov 	result, eax                                     ;put the eax in result 
+	 						
 		                                                        ; make a div operator 
-		mov 	result, eax                                     ;put the eax in result 
-	
+							              
+		
 
 
  
