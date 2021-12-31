@@ -53,7 +53,7 @@ main PROC
 
 start:
 call	CrLf                                                  ;spacing to able to reading
-lea edx,startprogram                                          :address of caculcator program will be copied  to EDX registor
+lea edx,startprogram                                          :address of caculcator program is copied  to EDX registor
 call  writestring                                             ;write calculator program
 call	CrLf	
 call	CrLf							
