@@ -52,6 +52,11 @@ parh_sign2                 DB ')', 0
 main PROC
 
 start :
+call  crlf
+lea edx,start program
+call  writestring 
+call  crlf
+call  crlf 
 
 
  
