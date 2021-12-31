@@ -33,10 +33,9 @@ result2                    DB " result is: ", 0
 operand_msg                DB"<invalid number ,try another trial>",0
 operator_msg               DB"< invalid operator ,try another trial>",0
 overflow_msg0              DB"<result is large,   try another trial>",0
-
 overflow _msg1             DB"<first number is large,try another trial>",0
 overflow_msg2              DB"<secand number is large,try another trial>",0
-zero Div_msg               DB"<Divison by zero is invalid number>",0
+div_by_zero_msg            DB"<Divison by zero is invalid >",0
 
  
 addition_sign              DB '+', 0
@@ -52,7 +51,7 @@ parh_sign2                 DB ')', 0
 
 main PROC
 
-start :
+start:
 call	CrLf							
 lea edx,startprogram
 call  writestring 
@@ -60,6 +59,20 @@ call	CrLf
 call	CrLf							
 
 
+; Getting first number
+	get_first_operand:
+		lea	edx, recall1
+		call	WriteString					; Writting the recall1 message
+		lea  edx, first_operandstring 
+		mov	ecx, 15
+		call	ReadString					; Read from the user a 32-bit integer and save it in EAX
+
+		
+		parsing_first_operand:
+
+		mov   	ecx, first_operand_len 
+    		call  	ParseInteger32
+		mov	first_operand, eax	    				; The value of EAX is copied to the first operand
 
 
  
