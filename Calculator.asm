@@ -94,13 +94,24 @@ get_operator:
 	       call	ReadString                                                       ; Read from the user a 32-bit integer and save it in EAX
 
 	       
-          parsing_first_operand:
+          parsing_second_operand:
 	  
 	        mov   	ecx, second_operand_len 
     		call  	ParseInteger32
 		mov	second_operand, eax                                              ; The value of EAX is copied to the second operand
+
+; re-routing to the required operator
 		
-	       
+        cmp       operator , '+'
+        je        operation_ add                                                                ; jump if equal to  operation_ add
+        cmp       operator , '-'
+        je        operation_sub                                                                 ; jump if equal to  operation_ sub       
+        cmp       operator , '*'
+        je        opreation_mult                                                                ; jump if equal to  operation_ mult
+        cmp       operator , '/'
+        je        operation_div                                                                 ; jump if equal to  operation_ div
+  
+ 
 	       
 
 	
