@@ -114,9 +114,44 @@ get_operator:
  
 	       
 
-	
-				    				
+; Do the  Additionopertion opertion 
 
+        do_addition:
+		mov 	eax, operand1                                   ; copy the first operand in eax
+		add 	eax , operand2           			; add the two operands( num1  + num2) and put the result in eax eax=eax+operand2
+		mov 	result , eax	                                ;put the eax in result 
+				    				
+; Do the Subtraction opertion 
+
+	do_subtraction:
+		mov 	eax , operand1 	     				; copy the first operand in eax
+		sub 	eax , operand2           			; subtract the second operand from the fisrt operand ( num1  - num2) and put the result in eax eax=eax-operand2
+		mov 	result , eax                                    ;put the eax in result 
+		
+		
+	
+;Do the Multiplication operation	
+
+        
+            do_multiplication:
+		mov 	eax,operand1          				; copy  the operand1 value and put it   eax
+		mov 	ebx,operand2          				; copy  the operand2 value and put it   ebx
+	        imul    ebx                 				; imul eax, ebx ....result of mul is aduble size of the operand so it store the result in edx-eax 
+		mov 	result, eax                                     ;put the eax in result 
+		
+		
+;Do the Division operation
+
+
+		do_division: 
+		xor 	edx, edx  		 			; clear edx => will have a most signtific 32bit from 64bit 
+		mov 	eax, operand1					; get operands  which is 32bit 
+		mov 	ebx, operand2 					; make  the divisble by to ebx 
+		cdq			        			; sign extend 
+		cmp 	ebx , 0h					; check the value of ebx is it zero will make an error 
+		je 	division_by_zero 
+		idiv 	ebx 						; make a div operator 
+		mov 	result, eax                                     ;put the eax in result 
 	
 
 
