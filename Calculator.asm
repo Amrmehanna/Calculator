@@ -103,13 +103,13 @@ get_operator:
 ; re-routing to the required operator
 		
         cmp       operator , '+'
-        je        operation_ add                                                                ; jump if equal to  operation_ add
+        je        addition_process                                                             ; jump if equal to addition_process
         cmp       operator , '-'
-        je        operation_sub                                                                 ; jump if equal to  operation_ sub       
+        je        subtraction_process                                                          ; jump if equal to subtraction_process
         cmp       operator , '*'
-        je        opreation_mult                                                                ; jump if equal to  operation_ mult
+        je        multiplication_process                                                        ; jump if equal to multiplication_process
         cmp       operator , '/'
-        je        operation_div                                                                 ; jump if equal to  operation_ div
+        je        division_process                                                              ; jump if equal to division_process
   
  
 	       
