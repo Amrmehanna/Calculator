@@ -151,7 +151,7 @@ get_operator:
 		idiv 	ebx                                             ;eax=eax/ebx
 	        mov 	result, eax                                     ;put the eax in result 
 	 						
-		                                                        ; make a divition operator 
+		                                                        ; make a division operator 
 							              
 		
 
