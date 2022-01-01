@@ -1,6 +1,6 @@
 # *Assembly Calculator*
 
-## Intro about the Project
+## Introduction about the Project
 Our team worked together to build a Two-operand simple calculator using assembly language. <br/>
 The program performs arithmetic operations such as  addition, subtraction, multiplication, and division.<br/>
 the symbols of  arithmatic operations is  ( + , - , * , / ).
