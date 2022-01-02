@@ -7,13 +7,11 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 ## Code Features
 support basic arithmatic processes (+,-,*,/)
-##Addition process
+
+Addition process
 Example: Enter the first number, or (e/E) to be: 30
-
 Choose an process (+, -, *, /), or (e/E) to be: +
-
 Enter the second number, or (e/E) to be: 10
-
 Output: result is (+30) + (+10) = +40
 
 
