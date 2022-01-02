@@ -5,6 +5,7 @@ Our team worked together to build a Two-operand simple calculator using assembly
 The program performs arithmetic operations such as  addition, subtraction, multiplication, and division.<br/>
 the symbols of  arithmatic operations is  ( + , - , * , / ).
 
+## Code Features
 
 
 ## Program limitations
@@ -17,8 +18,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 ## Tools
 -assembly programming languages <br/>
 -masm32(compiler)<br/>
--visual studio code<br/> 
--EMU8086 
+-visual studio code (using terminal to run the code)<br/> 
 
 ## team Members 
 
