@@ -29,9 +29,9 @@ result2                    DB " result is: ", 0
 
 operand_message                      DB"<invalid number ,try another trial>",0
 operator_message                     DB"< invalid operator ,try another trial>",0
-overflow_ the_ first_ message        DB"<result is large,   try another trial>",0
-overflow _the _second_ message       DB"<first number is large,try another trial>",0
-overflow_the _third_ message         DB"<secand number is large,try another trial>",0
+overflow_the_first_message        DB"<result is large,   try another trial>",0
+overflow_the_second_message       DB"<first number is large,try another trial>",0
+overflow_the_third_message         DB"<secand number is large,try another trial>",0
 div_by_zero_message                  DB"<Divison by zero is invalid >",0
 
  
