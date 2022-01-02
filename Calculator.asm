@@ -29,9 +29,9 @@ result2                    DB " result is: ", 0
 
 operand_message                      DB"<invalid number ,try another trial>",0
 operator_message                     DB"< invalid operator ,try another trial>",0
-overflow_the_first_message        DB"<result is large,   try another trial>",0
-overflow_the_second_message       DB"<first number is large,try another trial>",0
-overflow_the_third_message         DB"<secand number is large,try another trial>",0
+overflow_the_first_message           DB"<result is large,   try another trial>",0
+overflow_the_second_message          DB"<first number is large,try another trial>",0
+overflow_the_third_message           DB"<secand number is large,try another trial>",0
 div_by_zero_message                  DB"<Divison by zero is invalid >",0
 
  
@@ -174,8 +174,8 @@ get_operator:
 		je	sign_exist1
 		
 		sign_not_exist1:				 	; Begin checking operand validity from the start
-		mov	ecx, first_operand_len
-		lea	ebx, first_operandstring
+		mov	ecx, operand1_len
+		lea	ebx, operand1_string
 		jmp 	loop1
 
 
@@ -188,20 +188,50 @@ get_operator:
 		loop1:					  	; loop check
 		mov	al, [ebx] 		
 		call 	IsDigit				
-		jnz	incorrect_first_operand
+		jnz	incorrect_operand1
 		inc	ebx
 		loop	loop1	
 
 		jmp parsing_first_operand
 
-		incorrect_first_operand:
+		incorrect_operand1:
 			call	CrLf                    
 			mov 	edx , offset operand_message
 			call 	WriteString
 			call	CrLf
 			call	CrLf
 			jmp 	get_first_operand
- 
+			
+			
+ 	check_operator_validitation:
+
+		cmp 	operator,'E'	     	  ; exit if (E/e) is found
+		je	quit	
+		cmp 	operator,'e'
+		je	quit
+
+		cmp 	operator , '+'                  
+		je 	get_second_operand              ; jump if  is equal to operator is saved 
+		cmp 	operator , '-'                  
+		je 	get_second_operand             ; jump if is equal to operator is saved 
+		cmp 	operator , '*'                   
+		je 	get_second_operand             ; jump if is equal to operator is saved
+		cmp 	operator , '/'                 
+		je 	get_second_operand              ; jump if  is equal to save the operator 
+
+		jmp 	incorrect_operator         ; else jump to incorrect_operator section
+
+		incorrect_operator:            	; message will be printed if user enter incorrect operator
+			call 	Crlf
+			call 	Crlf
+			mov 	edx , offset operator_message
+			call 	WriteString
+			call 	Crlf
+			jmp 	get_operator
+
+	
+		
+
 
 
 
