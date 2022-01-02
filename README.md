@@ -20,7 +20,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 -visual studio code<br/> 
 -EMU8086 
 
-## Members of the team 
+## team Members 
 
 - [Amr Mehanna](https://github.com/Amrmehanna)
 - [Ahmed Mahmoud Mahmoud ](https://github.com/AhmedMahmoud125)
