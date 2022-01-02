@@ -179,6 +179,12 @@ get_operator:
 		jmp 	loop1
 
 
+		sign_exist1:					 	; checking operand validity from the second character
+		mov	ecx, first_operand_len				
+		dec	ecx
+		lea	ebx, first_operandstring	
+		inc	ebx
+
 		loop1:					  	; loop check
 		mov	al, [ebx] 		
 		call 	IsDigit				
