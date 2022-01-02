@@ -24,9 +24,9 @@ second_operand             DD ?
 operator                   DB ?
 result1                    DD ?
 
-recall1                    DB "Enter the fisrt number, or (f/c) to exit", 0
-recall2                    DB "Enter the second number, or (f/c) to exit " 0
-recall3                    DB "Choose an operation (+, -, *, /), or (f/c) to exit ", 
+recall1                    DB "Enter the fisrt number, or (E/e) to exit", 0
+recall2                    DB "Enter the second number, or (E/e) to exit " 0
+recall3                    DB "Choose an operation (+, -, *, /), or (E/e) to exit ", 
 result2                    DB " result is: ", 0
 
 
@@ -156,9 +156,27 @@ get_operator:
 		
 
 
+ ; Dealing with Exceptions
  
+ check_first_operand_validation:
  
- 
+ 		lea  	edx, first_operand				; obtain the first operand's length 
+        	call 	StrLength
+        	mov  	first_operand_len, eax
+
+		mov	al, first_operandstring			        ; Quit the programm
+		cmp 	al,'E'
+		je	quit
+		cmp 	al,'e'
+		je	quit	
+		
+
+		cmp	al, '+'					 	; Verify that the operand begins with a sign
+		je	there_is_sign
+		cmp	al, '-'
+		je	there_is_sign
+
+		
 
 
 
