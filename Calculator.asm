@@ -27,12 +27,12 @@ recall3                    DB "Choose an operation (+, -, *, /), or (E/e) to exi
 result2                    DB " result is: ", 0
 
 
-operand_msg                DB"<invalid number ,try another trial>",0
-operator_msg               DB"< invalid operator ,try another trial>",0
-overflow_msg0              DB"<result is large,   try another trial>",0
-overflow _msg1             DB"<first number is large,try another trial>",0
-overflow_msg2              DB"<secand number is large,try another trial>",0
-div_by_zero_msg            DB"<Divison by zero is invalid >",0
+operand_message                    DB"<invalid number ,try another trial>",0
+operator_message                   DB"< invalid operator ,try another trial>",0
+overflow_ the first message        DB"<result is large,   try another trial>",0
+overflow _the second message       DB"<first number is large,try another trial>",0
+overflow_the third message         DB"<secand number is large,try another trial>",0
+div_by_zero_message                DB"<Divison by zero is invalid >",0
 
  
 addition_sign              DB '+', 0
