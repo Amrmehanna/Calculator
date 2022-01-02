@@ -9,7 +9,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 ## Program limitations
 
-  1. Does not allow fractions
+  1. Does not allow fractions only integer number.
   2. I'm unable to print the result of a 32-bit numeric multiplication.<br/> 
   hint :(destination of multiplication required the double size of the two register multiplied which is no to be supported )
 
