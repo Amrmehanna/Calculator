@@ -174,8 +174,8 @@ get_operator:
 		je	sign_exist1
 		
 		sign_not_exist1:				 	; Begin checking operand validity from the start
-		mov	ecx, operand1_len
-		lea	ebx, operand1_string
+		mov	ecx, first_operand_len
+		lea	ebx, first_operandstring
 		jmp 	loop1
 
 
@@ -188,13 +188,13 @@ get_operator:
 		loop1:					  	; loop check
 		mov	al, [ebx] 		
 		call 	IsDigit				
-		jnz	incorrect_operand1
+		jnz	incorrect_first_operand
 		inc	ebx
 		loop	loop1	
 
 		jmp parsing_first_operand
 
-		incorrect_operand1:
+		incorrect_first_operand:
 			call	CrLf                    
 			mov 	edx , offset operand_message
 			call 	WriteString
