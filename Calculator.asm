@@ -169,13 +169,33 @@ get_operator:
 		
 
 		cmp	al, '+'					 	; Verify that the operand begins with a sign
-		je	there_is_sign
+		je	sign_exist1
 		cmp	al, '-'
-		je	there_is_sign
-
+		je	sign_exist1
 		
+		sign_not_exist1:				 	; Begin checking operand validity from the start
+		mov	ecx, operand1_len
+		lea	ebx, operand1_string
+		jmp 	loop1
 
 
+		loop1:					  	; loop check
+		mov	al, [ebx] 		
+		call 	IsDigit				
+		jnz	incorrect_operand1
+		inc	ebx
+		loop	loop1	
+
+		jmp parsing_first_operand
+
+		incorrect_operand1:
+			call	CrLf                    
+			mov 	edx , offset operand_message
+			call 	WriteString
+			call	CrLf
+			call	CrLf
+			jmp 	get_first_operand
+ 
 
 
 
