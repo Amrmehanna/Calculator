@@ -238,8 +238,13 @@ get_operator:
         	call 	StrLength
         	mov  	second_operand_len, eax
 		
-
-            
+                
+                mov	al, second_operandstring			        ; Quit the programm
+		cmp 	al,'E'
+		je	quit
+		cmp 	al,'e'
+		je	quit	
+		
 
 
 
