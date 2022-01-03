@@ -231,7 +231,15 @@ get_operator:
 
 	
 		
+      check_second_operand_validation:
+       
+                          
+         lea  	edx, second_operand				; obtain the second operand's length 
+        	call 	StrLength
+        	mov  	second_operand_len, eax
+		
 
+            
 
 
 
