@@ -366,3 +366,35 @@ get_operator:
 		; Print the spacing sign
 		mov	al, space_sign
 		call	WriteChar
+
+		; Print the operator sign
+		mov	al, operator
+		call	WriteChar
+
+		; Print the spacing sign
+		mov	al, space_sign
+		call	WriteChar
+
+		; Print the first parth_sign1
+		mov	al, parth_sign1
+		call	WriteChar
+
+		; Print the second operand
+		mov	eax,  second_operand
+		call	WriteInt
+
+		; Print the second parth_sign2
+		mov	al, parth_sign2
+		call	WriteChar
+
+		; Print the spacing sign
+		mov	al, space-sign
+		call	WriteChar
+
+		; Print the equals sign
+		mov	al, equal_sign
+		call	WriteChar
+
+		; Print the spacing sign
+		mov	al, space_sign
+		call	WriteChar
