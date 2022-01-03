@@ -286,7 +286,22 @@ get_operator:
 			
 			
 	         
-	        
+	rerult_overflow:		              		; if overflow occurs in results
+		call 	Crlf
+		mov 	edx , offset overflow_the_first_message    	
+		call	WriteString
+		call 	Crlf			 
+		jmp 	quit	      				; exit the program 
+
+
+	first_operand_overflow:		              		; if overflow occurs in first operand
+		call 	Crlf
+		mov 	edx , offset overflow_the_second_message    		; request that the user enter a smaller number
+		call 	WriteString
+		call 	Crlf
+		call 	Crlf			 
+		jmp 	get_first_operand	      			; return the user back to the get_operand1 section 
+      
 	      
 	      
 	      
