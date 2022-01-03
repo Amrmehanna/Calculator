@@ -343,3 +343,26 @@ get_operator:
 		call 	Crlf
 		call 	Crlf
 		jmp 	get_second_operand
+		
+		
+	; Print result2
+	printing_results:
+		call	CrLf
+		lea	edx, result_message
+		call	WriteString
+
+		; Print the first parth_sign1
+		mov  	al, parth_sign1
+		call 	WriteChar
+
+		; Print the first operand
+		mov	eax, first_operand
+		call	WriteInt
+
+		; Print the second parth_sign2
+		mov	al, parth_sign2
+		call	WriteChar
+
+		; Print the spacing sign
+		mov	al, space_sign
+		call	WriteChar
