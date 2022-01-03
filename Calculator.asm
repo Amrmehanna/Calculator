@@ -117,7 +117,7 @@ get_operator:
 		mov 	eax,first_operand                               ; copy the first operand in eax
 		add 	eax , second_operand          			; add the two operands( first_operand  + second_operand) and put the result in eax eax=eax+operand2
 		mov 	result , eax	                                ;put the eax in result 
-		jo 	result_overflow           			; in case of found  overflow it is jumped.
+		jo 	result_overflow           			; in case of found  overflow in addition  it is jumped .
 		jmp 	print_result1            			; print resulte1 of the addition
 		    				
 ; Do the Subtraction opertion 
@@ -126,7 +126,9 @@ get_operator:
 		mov 	eax , first_operand 	     		        ; copy the first operand in eax
 		sub 	eax ,second_operand          			; subtract the second operand from the fisrt operand (first_operand - second_operand) and put the result in eax
 		mov 	result , eax                                    ;put the eax in result 
-		
+		jo 	result_overflow           			; in case of found  overflow  in subtraction it is jumped .
+		jmp 	print_result1            			; print resulte1 of the subtraction
+
 		
 	
 ;Do the Multiplication operation	
@@ -137,7 +139,9 @@ get_operator:
 		mov 	ebx,second_operand         			; copy  thesecond_operand value and put it   ebx
 	        imul    ebx                 				; imul eax, ebx ....result of mul is aduble size of the operand so it store the result in edx-eax=eax*ebx 
 		mov 	result, eax                                     ;put the eax in result 
-		
+		jo 	result_overflow           			; in case of found  overflow in multiplication it is jumped.
+		jmp 	print_result1            			; print resulte1 of the  multiplication
+
 		
 ;Do the Division operation
 
@@ -149,10 +153,11 @@ get_operator:
 		                           
 		idiv 	ebx                                             ;eax=eax/ebx
 	        mov 	result, eax                                     ;put the eax in result 
-	 						
 		                                                        ; make a division operator 
 							              
-		
+		jo 	result_overflow           			; in case of found  overflow in division it is jumped.
+		jmp 	print_result1            			; print resulte1 of the division
+
 
 
  ; Dealing with Exceptions
