@@ -305,4 +305,16 @@ get_operator:
 	      
 	      
 	      
-	      
+	second-operand_overflow:			      		; if overflow occurs in second operand 
+		call 	Crlf
+		mov 	edx , offset overflow_the_third_message    		; request that the user enter a smaller number
+		call 	WriteString
+		jmp 	get_second_operand	      			; return the user back to the get second_operand section
+
+	division_by_zero: 
+		call 	Crlf
+		mov 	edx , offset div_by_zero_message    		; print message if found divide by zero 
+		call 	WriteString
+		call 	Crlf
+		call 	Crlf
+		jmp 	get_second_operand
