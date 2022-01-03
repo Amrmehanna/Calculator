@@ -263,3 +263,23 @@ get_operator:
 		lea	ebx, second_operandstring	
 		inc	ebx
 
+              
+	        
+		loop2:					  	; loop check
+		mov	al, [ebx] 		
+		call 	IsDigit				
+		jnz	incorrect_operand2
+		inc	ebx
+		loop	loop2	
+
+		jmp parsing_second_operand
+		
+		
+		
+	      
+	      
+	      
+	      
+	      
+	      
+	      
