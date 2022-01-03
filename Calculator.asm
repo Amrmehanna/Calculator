@@ -24,7 +24,7 @@ result1                    DD ?
 recall1                    DB "Enter the fisrt number, or (E/e) to exit", 0
 recall2                    DB "Enter the second number, or (E/e) to exit " 0
 recall3                    DB "Choose an operation (+, -, *, /), or (E/e) to exit ", 
-result2                    DB " result is: ", 0
+result_message             DB " result is: ", 0
 
 
 operand_message                      DB"<invalid number ,try another trial>",0
@@ -63,6 +63,8 @@ call	CrLf
 		lea  edx, first_operandstring 
 		mov	ecx, 15
 		call	ReadString					; Read from the user a 32-bit integer and save it in EAX
+		
+		jmp 	check_first_operand_validation
 
 		
 		parsing_first_operand:
@@ -70,6 +72,8 @@ call	CrLf
 		mov   	ecx, first_operand_len 
     		call  	ParseInteger32
 		mov	first_operand, eax	    				; The value of EAX is copied to the first operand
+		jo 	first_operand_overflow
+		
 		
 get_operator:		
 	call	CrLf			
@@ -78,7 +82,10 @@ get_operator:
 	call	ReadChar					; read the operator from the user to save it in AL
 	mov	operator, al	    				; the character of AL is copied to operator variable 
 	
+	jmp 	check_operator_validitation			; check if the operator is a valid 
+	
 ; Getting second number
+
 
      get_second_operand:
      
@@ -90,12 +97,15 @@ get_operator:
 	       mov	ecx, 15
 	       call	ReadString                                                       ; Read from the user a 32-bit integer and save it in EAX
 
+	       jmp 	check_second_operand_validation
 	       
           parsing_second_operand:
 	  
 	        mov   	ecx, second_operand_len 
     		call  	ParseInteger32
 		mov	second_operand, eax                                              ; The value of EAX is copied to the second operand
+		jo 	second_operand_overflow
+		
 
 ; re-routing to the required operator
 		
@@ -162,7 +172,10 @@ get_operator:
 		idiv 	ebx                                            ; make a division operator 
 		
 	        mov 	result, eax                                     ;put the eax in result 
-	 	jmp 	printing_results            			; print resultes	
+	 	jmp 	printing_results            			; print resultes					
+		                                                        
+							              
+		
 
 
  ; Dealing with Exceptions
@@ -330,79 +343,3 @@ get_operator:
 		call 	Crlf
 		call 	Crlf
 		jmp 	get_second_operand
-		
-		
-		
-		printing_results:
-		; Print result2
-		call	CrLf
-		lea	edx, result_message
-		call	WriteString
-
-		; Print the first parth_sign1
-		mov  	al, parth_sign1
-		call 	WriteChar
-
-		; Print the first operand
-		mov	eax, first_operand
-		call	WriteInt
-
-		; Print the second parth_sign2
-		mov	al, parth_sign2
-		call	WriteChar
-
-		; Print the spacing sign
-		mov	al, space_sign
-		call	WriteChar
-		
-		; Print the operator sign
-		mov	al, operator
-		call	WriteChar
-
-		; Print the spacing sign
-		mov	al, space_sign
-		call	WriteChar
-
-		; Print the first parth_sign1
-		mov	al, parth_sign1
-		call	WriteChar
-
-		; Print the second operand
-		mov	eax,  second_operand
-		call	WriteInt
-
-		; Print the second parth_sign2
-		mov	al, parth_sign2
-		call	WriteChar
-
-		; Print the spacing sign
-		mov	al, space-sign
-		call	WriteChar
-
-		; Print the equals sign
-		mov	al, equal_sign
-		call	WriteChar
-
-		; Print the spacing sign
-		mov	al, space_sign
-		call	WriteChar
-		
-; Print out the result
-        	mov	eax, result1
-		call	WriteInt
-		call	CrLf
-		call	CrLf
-		jmp	start
-
-
-	quit:
-		call	CrLf
-		call	CrLf
-		lea	edx, endprogram
-		call	WriteString	
-		call	CrLf
-		exit	
-
-main ENDP
-
-END main
