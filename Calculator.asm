@@ -42,7 +42,7 @@ muliplication_sign         DB '*', 0
 space_sign                 DB ' ', 0
 equal_sign                 DB '=', 0
 parth_sign1                DB '(', 0
-parh_sign2                 DB ')', 0
+parth_sign2                 DB ')', 0
 
 .code
 
