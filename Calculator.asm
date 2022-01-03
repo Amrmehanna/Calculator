@@ -251,4 +251,15 @@ get_operator:
 		cmp	al, '-'
 		je	sign_exist2
 
+                sign_not_exist2:				 	; Begin checking operand validity from the start
+		mov	ecx, second_operand_len	
+		lea	ebx, second_operandstring
+		jmp 	loop1
+
+
+		sign_exist2:					 	; checking operand validity from the second character
+		mov	ecx, second_operand_len				
+		dec	ecx
+		lea	ebx, second_operandstring	
+		inc	ebx
 
