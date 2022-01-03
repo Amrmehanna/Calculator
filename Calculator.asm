@@ -246,6 +246,9 @@ get_operator:
 		je	quit	
 		
 
-
+                cmp	al, '+'					 	; Verify that the operand begins with a sign
+		je	sign_exist2
+		cmp	al, '-'
+		je	sign_exist2
 
 
