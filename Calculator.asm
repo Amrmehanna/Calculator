@@ -194,7 +194,7 @@ get_operator:
 
 		jmp parsing_first_operand
 
-		incorrect_operand1:
+		incorrect_first_operand:
 			call	CrLf                    
 			mov 	edx , offset operand_message
 			call 	WriteString
@@ -276,7 +276,7 @@ get_operator:
 		
 		
 		
-	        incorrect_operand2:
+	        incorrect_ second_operand:
 			call	CrLf                    
 			mov 	edx , offset operand_message
 			call 	WriteString
