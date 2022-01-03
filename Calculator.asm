@@ -174,8 +174,8 @@ get_operator:
 		je	sign_exist1
 		
 		sign_not_exist1:				 	; Begin checking operand validity from the start
-		mov	ecx, operand1_len
-		lea	ebx, operand1_string
+		mov	ecx, first_operand_len
+		lea	ebx, first_operandstring
 		jmp 	loop1
 
 
