@@ -111,24 +111,28 @@ get_operator:
  
 	       
 
-; Do the  Additionopertion opertion 
+; Do the  Addition opertion  
 
      addition_process:
 		mov 	eax,first_operand                               ; copy the first operand in eax
 		add 	eax , second_operand          			; add the two operands( first_operand  + second_operand) and put the result in eax eax=eax+operand2
-		mov 	result , eax	                                ;put the eax in result 
-		jo 	result_overflow           			; in case of found  overflow in addition  it is jumped .
-		jmp 	print_result1            			; print resulte1 of the addition
-		    				
+		mov 	result , eax	                                ;put the eax in result
+		
+		jo 	result_overflow           			; jump if found overflow 
+		jmp 	printing_results            			; print resultes
+
+				    				
 ; Do the Subtraction opertion 
 
 	subtraction_process:
 		mov 	eax , first_operand 	     		        ; copy the first operand in eax
 		sub 	eax ,second_operand          			; subtract the second operand from the fisrt operand (first_operand - second_operand) and put the result in eax
-		mov 	result , eax                                    ;put the eax in result 
-		jo 	result_overflow           			; in case of found  overflow  in subtraction it is jumped .
-		jmp 	print_result1            			; print resulte1 of the subtraction
+		mov 	result , eax                                    ;put the eax in result
+		
+		jo 	result_overflow           			; jump if found overflow 
+		jmp 	printing_results            			; print resultes
 
+		
 		
 	
 ;Do the Multiplication operation	
@@ -139,25 +143,26 @@ get_operator:
 		mov 	ebx,second_operand         			; copy  thesecond_operand value and put it   ebx
 	        imul    ebx                 				; imul eax, ebx ....result of mul is aduble size of the operand so it store the result in edx-eax=eax*ebx 
 		mov 	result, eax                                     ;put the eax in result 
-		jo 	result_overflow           			; in case of found  overflow in multiplication it is jumped.
-		jmp 	print_result1            			; print resulte1 of the  multiplication
+		
+		jo 	result_overflow           			; jump if found overflow 
+		jmp 	printing_results            			; print resultes
 
+		
 		
 ;Do the Division operation
 
 
 		division_process:
-		xor 	edx, edx  		 			; clear edx => will have a most signtific 32bit from 64bit 
-		mov 	eax,first_operand				; get operands  which is 32bit 
-		mov 	ebx, second_operand 				; make  the divisble by to ebx 
-		                           
-		idiv 	ebx                                             ;eax=eax/ebx
+		xor 	edx, edx  		 			; clear edx to have a most signtific 32bit from 64bit 
+		mov 	eax,first_operand				; get operands 32bit 
+		mov 	ebx, second_operand 				; assign the divisble  to ebx 
+		cdq			        			; sign extend 
+		cmp 	EBX , 0h					; check the value of EBX is it zero will make an error 
+		je 	division_by_zero                            
+		idiv 	ebx                                            ; make a division operator 
+		
 	        mov 	result, eax                                     ;put the eax in result 
-		                                                        ; make a division operator 
-							              
-		jo 	result_overflow           			; in case of found  overflow in division it is jumped.
-		jmp 	print_result1            			; print resulte1 of the division
-
+	 	jmp 	printing_results            			; print resultes	
 
 
  ; Dealing with Exceptions
