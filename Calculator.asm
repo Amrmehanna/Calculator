@@ -398,3 +398,23 @@ get_operator:
 		; Print the spacing sign
 		mov	al, space_sign
 		call	WriteChar
+		
+		; Print out the result
+        	mov	eax, result1
+		call	WriteInt
+		call	CrLf
+		call	CrLf
+		jmp	start
+
+
+	quit:
+		call	CrLf
+		call	CrLf
+		lea	edx, endprogram
+		call	WriteString	
+		call	CrLf
+		exit	
+
+main ENDP
+
+END main
