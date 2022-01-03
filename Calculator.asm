@@ -276,9 +276,17 @@ get_operator:
 		
 		
 		
-	      
-	      
-	      
+	        incorrect_operand2:
+			call	CrLf                    
+			mov 	edx , offset operand_message
+			call 	WriteString
+			call	CrLf
+			call	CrLf
+			jmp 	get_second_operand
+			
+			
+	         
+	        
 	      
 	      
 	      
