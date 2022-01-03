@@ -117,7 +117,9 @@ get_operator:
 		mov 	eax,first_operand                               ; copy the first operand in eax
 		add 	eax , second_operand          			; add the two operands( first_operand  + second_operand) and put the result in eax eax=eax+operand2
 		mov 	result , eax	                                ;put the eax in result 
-				    				
+		jo 	result_overflow           			; in case of found  overflow it is jumped.
+		jmp 	print_result1            			; print resulte1 of the addition
+		    				
 ; Do the Subtraction opertion 
 
 	subtraction_process:
