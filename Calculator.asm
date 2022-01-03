@@ -276,7 +276,7 @@ get_operator:
 		
 		
 		
-	        incorrect_operand2:
+	        incorrect_second_operand:
 			call	CrLf                    
 			mov 	edx , offset operand_message
 			call 	WriteString
