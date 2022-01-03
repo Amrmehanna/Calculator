@@ -12,18 +12,18 @@ endprogram                 DB " we are happy to use our two operand calculator",
 
 first_operandstring        DB 16 dup (?)
 second_operandstring       DB 16 dup (?)
-first_operand_len          DB ?
-second_operand_len         DB ?
+first_operand_len          DD ?
+second_operand_len         DD ?
 
 
 first_operand              DD ?
 second_operand             DD ?
 operator                   DB ?
-result1                    DD ?
+result                    DD ?
 
 recall1                    DB "Enter the fisrt number, or (E/e) to exit", 0
-recall2                    DB "Enter the second number, or (E/e) to exit " 0
-recall3                    DB "Choose an operation (+, -, *, /), or (E/e) to exit ", 
+recall2                    DB "Enter the second number, or (E/e) to exit ", 0
+recall3                    DB "Choose an operation (+, -, *, /), or (E/e) to exit ",0 
 result_message             DB " result is: ", 0
 
 
@@ -293,7 +293,7 @@ get_operator:
 		loop2:					  	; loop check
 		mov	al, [ebx] 		
 		call 	IsDigit				
-		jnz	incorrect_operand2
+		jnz	incorrect_second_operand
 		inc	ebx
 		loop	loop2	
 
@@ -311,7 +311,7 @@ get_operator:
 			
 			
 	         
-	rerult_overflow:		              		; if overflow occurs in results
+	result_overflow:		              		; if overflow occurs in results
 		call 	Crlf
 		mov 	edx , offset overflow_the_first_message    	
 		call	WriteString
@@ -330,7 +330,7 @@ get_operator:
 	      
 	      
 	      
-	second-operand_overflow:			      		; if overflow occurs in second operand 
+	second_operand_overflow:			      		; if overflow occurs in second operand 
 		call 	Crlf
 		mov 	edx , offset overflow_the_third_message    		; request that the user enter a smaller number
 		call 	WriteString
@@ -388,7 +388,7 @@ get_operator:
 		call	WriteChar
 
 		; Print the spacing sign
-		mov	al, space-sign
+		mov	al, space_sign
 		call	WriteChar
 
 		; Print the equals sign
@@ -400,7 +400,7 @@ get_operator:
 		call	WriteChar
 		
 		; Print out the result
-        	mov	eax, result1
+        	mov	eax, result
 		call	WriteInt
 		call	CrLf
 		call	CrLf
