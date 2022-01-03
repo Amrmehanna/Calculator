@@ -143,7 +143,7 @@ get_operator:
 		division_process:
 		xor 	edx, edx  		 			; clear edx => will have a most signtific 32bit from 64bit 
 		mov 	eax,first_operand				; get operands  which is 32bit 
-		mov 	ebx, operand2 					; make  the divisble by to ebx 
+		mov 	ebx, second_operand 				; make  the divisble by to ebx 
 		                           
 		idiv 	ebx                                             ;eax=eax/ebx
 	        mov 	result, eax                                     ;put the eax in result 
@@ -188,7 +188,7 @@ get_operator:
 		loop1:					  	; loop check
 		mov	al, [ebx] 		
 		call 	IsDigit				
-		jnz	incorrect_operand1
+		jnz	incorrect_first_operand
 		inc	ebx
 		loop	loop1	
 
@@ -276,7 +276,7 @@ get_operator:
 		
 		
 		
-	        incorrect_ second_operand:
+	        incorrect_operand2:
 			call	CrLf                    
 			mov 	edx , offset operand_message
 			call 	WriteString
