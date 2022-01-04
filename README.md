@@ -70,7 +70,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 > 
 > `Choose an operation (+, -, *, /), or (E/e) to exit: `
 > 
-> **Output:** `< invalid operator ,try another trial >`
+> **Output:** `< invalid operator ,try another trial..... >`
 >
 >`Choose an operation (+, -, *, /), or (E/e) to exit: `
 
