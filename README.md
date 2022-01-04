@@ -89,7 +89,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >
 > **Output:** `<Divison by zero is invalid,try another trial. ... >`
 >
->`Enter the second number, or (E/e) to exit: 
+>`Enter the second number, or (E/e) to exit: `
  
 
 
