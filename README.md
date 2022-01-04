@@ -50,7 +50,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 > **Example 1:** `Enter the first number, or (E/e) to exit: sd3`
 > 
-> **The Output:** `< invalid number ,try another trial >`
+> **The Output:** `< invalid number ,try another trial.... >`
 >
 >`Enter the first number, or (E/e) to exit: `
 
@@ -60,7 +60,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >
 >`Enter the second number, or (E/e) to exit: efe3`
 >
-> **Output:** `< invalid number ,try another trial >`
+> **Output:** `< invalid number ,try another trial.... >`
 >
 >`Enter the second number, or (E/e) to exit: `
 
@@ -97,7 +97,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 > **Example 1:** `Enter the first number, or (E/e) to exit: 6666666666`
 >
-> `< first number is large,try another trial >`
+> `< first number is large,try another trial..... >`
 >
 > **Output:** `Enter the first number, or (E/e) to exit:`
 
@@ -108,7 +108,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >
 > `Enter the second number, or (E/e) to exit: 6666666666`
 >
-> **Output:** `< secand number is large,try another trial >`
+> **Output:** `< secand number is large,try another trial.... >`
 >
 >> `Enter the second number, or (E/e) to exit: `
 
