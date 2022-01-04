@@ -155,10 +155,9 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 
 
-
-
-
-
+ 5. **overflow in Division**
+  
+  Because the user can only enter a 32-bit numerator and we fill the EDX register with zeros to avoid calculation problems, there will be no overflow in division
 
 
 
