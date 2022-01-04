@@ -6,20 +6,14 @@ The program performs arithmetic operations such as  addition, subtraction, multi
 the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 ## Code Features
-support basic arithmatic processes (+,-,*,/)
-
-Addition process
-
-Example: Enter the first number, or (e/E) to be: 30
-
-Choose an process (+, -, *, /), or (e/E) to be: + 
-
-Enter the second number, or (e/E) to be: 10
-
-Output: result is (+30) + (+10) = +40
-
-
-
+**Addition Process**
+> **Example from the code :** `Enter the fisrt number, or (E/e) to exit: 50`
+> 
+>`Choose an operation (+, -, *, /), or (E/e) to exit:  + `
+>
+>`Enter the second number, or (E/e) to exit: 60`
+>
+> **the Output:** `result is (+50) + (+60) = +110`
 
 
 
@@ -32,13 +26,17 @@ Output: result is (+30) + (+10) = +40
 
 
 ## Tools
--assembly programming languages <br/>
--masm32(compiler)<br/>
--visual studio code (using terminal to run the code)<br/> 
+- Visual Studio Code (using terminal to run the code) <br/>
+- Irvine Library<br/>
+- Msm32(compiler)
 
-## team Members 
+
+## Team Members 
 
 - [Amr Mehanna](https://github.com/Amrmehanna)
 - [Ahmed Mahmoud Mahmoud ](https://github.com/AhmedMahmoud125)
 - [Mina Bekheet](https://github.com/MinaBekheet)
 - [Mahmoud Sayed](https://github.com/MahmoudSayed77)
+
+## Under the supervision of 
+Dr.Abdelhamid Attaby
