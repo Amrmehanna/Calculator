@@ -51,7 +51,7 @@ main PROC
 start:
 call	CrLf                                                  ;spacing to able to reading
 lea edx,startprogram                                          ;address of caculcator program is copied  to EDX registor
-call  writestring                                             ;write calculator program
+call  WriteString                                             ;write calculator program
 call	CrLf	
 call	CrLf							
 
@@ -182,7 +182,7 @@ get_operator:
  
  check_first_operand_validation:
  
- 		lea  	edx, first_operand				; obtain the first operand's length 
+ 		lea  	edx, first_operandstring				; obtain the first operand's length 
         	call 	StrLength
         	mov  	first_operand_len, eax
 
@@ -259,7 +259,7 @@ get_operator:
       check_second_operand_validation:
        
                           
-         lea  	edx, second_operand				; obtain the second operand's length 
+         lea  	edx, second_operandstring				; obtain the second operand's length 
         	call 	StrLength
         	mov  	second_operand_len, eax
 		
@@ -279,7 +279,7 @@ get_operator:
                 sign_not_exist2:				 	; Begin checking operand validity from the start
 		mov	ecx, second_operand_len	
 		lea	ebx, second_operandstring
-		jmp 	loop1
+		jmp 	loop2
 
 
 		sign_exist2:					 	; checking operand validity from the second character
