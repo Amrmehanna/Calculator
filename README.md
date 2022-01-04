@@ -49,7 +49,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 > **Example 1:** `Enter the first number, or (E/e) to exit: b5p`
 > 
-> **Output:** `< Invalid correct, try anotner trail ... >`
+> **Output:** `< Incorrect number, try anotner trail ... >`
 >
 >`Enter the first number, or (E/e) to exit: `
 
