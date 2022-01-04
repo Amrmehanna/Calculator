@@ -81,13 +81,13 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 - **By dividing by zero**
 
-> **Example:** `Enter the first number, or (E/e) to exit: 8
+> **Example:** `Enter the first number, or (E/e) to exit: 8`
 >
 > `Choose an operation (+, -, *, /), or (E/e) to exit: / `
 > 
 > `Enter the second number, or (E/e) to exit: 0`
 >
-> **Output:** `< Try again if division by zero isn't working. ... >`
+> **Output:** `<Divison by zero is invalid,try another trial. ... >`
 >
 >`Enter the second number, or (E/e) to exit: 
  
@@ -100,7 +100,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 > **Example 1:** `Enter the first number, or (E/e) to exit: 6666666666`
 >
-> `< Please enter a smaller number because the first one is too big to fit >`
+> `< first number is large,try another trial >`
 >
 > **Output:** `Enter the first number, or (E/e) to exit:`
 
@@ -111,13 +111,23 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >
 > `Enter the second number, or (E/e) to exit: 6666666666`
 >
-> **Output:** `< Please enter a smaller number because the second one is too big to fit >`
+> **Output:** `< secand number is large,try another trial >`
 >
 >> `Enter the second number, or (E/e) to exit: `
 
 
 
+ 2. **Overflow in addition** 
 
+> **Example:** `Enter the first number, or (E/e) to exit: 1800000000`
+>
+> `Choose an operation (+, -, *, /), or (E/e) to exit: + `
+> 
+> `Enter the second number, or (E/e) to exit: 1800000000`
+>
+> **Output:** `< Due to an overflow, the result was incorrect; please try again >`
+>
+> `Enter the first number, or (E/e) to exit: `
 
 
 ## Program limitations
