@@ -7,8 +7,8 @@ includelib \Irvine\kernel32.lib
 
 .data
 
-startprogram               DB " Welcome to the assembly calculator Porgram ", 0
-endprogram                 DB " we are happy to use our two operand calculator", 0
+startprogram               DB "  Welcome to the assembly calculator Porgram  ", 0
+endprogram                 DB "   we are happy to use our two operand calculator  ", 0
 
 first_operandstring        DB 16 dup (?)
 second_operandstring       DB 16 dup (?)
@@ -21,10 +21,10 @@ second_operand             DD ?
 operator                   DB ?
 result                    DD ?
 
-recall1                    DB "Enter the fisrt number, or (E/e) to exit", 0
-recall2                    DB "Enter the second number, or (E/e) to exit ", 0
-recall3                    DB "Choose an operation (+, -, *, /), or (E/e) to exit ",0 
-result_message             DB " result is: ", 0
+recall1                    DB "Enter the fisrt number, or (E/e) to exit:   ", 0
+recall2                    DB "Enter the second number, or (E/e) to exit:    ", 0
+recall3                    DB "Choose an operation (+, -, *, /), or (E/e) to exit:   ",0 
+result_message             DB " result is:   ", 0
 
 
 operand_message                      DB"<invalid number ,try another trial>",0
