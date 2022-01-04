@@ -6,66 +6,77 @@ The program performs arithmetic operations such as  addition, subtraction, multi
 the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 ## Code Features
-- **Addition Process**
-> **Example from the code:** `Enter the fisrt number, or (E/e) to exit: 50`
+- **Addition process**
+> **Example:** `Enter the first number, or (E/e) to exit: 50`
 > 
->`Choose an operation (+, -, *, /), or (E/e) to exit:  + `
+>`Choose an process (+, -, *, /), or (E/e) to exit: + `
 >
->`Enter the second number, or (E/e) to exit: 60`
+>`Enter the second number, or (E/e) to exit: 60
 >
-> **The Output:** `result is (+50) + (+60) = +110`
- 
-<br/>
+> **Output:** `Evaluation result is (+50) + (+60) = +110
 
-- **substract Process**
-> **Example from the code:** `Enter the fisrt number, or (E/e) to exit: 80
+- **Subtraction process**
+> **Example:** `Enter the first number, or (E/e) to exit:  80`
 > 
->`Choose an operation (+, -, *, /), or (E/e) to exit:-`
+>`Choose an process (+, -, *, /), or (Q/q) to exit: - `
 >
->`Enter the second number, or (E/e) to exit: 100
->`
->**the output:** result is (80)-(+100)=-20
-> <br/>
+>`Enter the second number, or (E/e) to exit: 100`
+>
+> **Output:** `Evaluation result is (+80) - (+100) = -20
 
-- **Multiplication Process**
-> **Example from the code:** `Enter the fisrt number, or (E/e) to exit: -200`
+- **Multiplication process**
+> **Example:** `Enter the first number, or (E/e) to exit:  -200`
+> 
+>`Choose a process (+, -, *, /), or (E/e) to exit: * `
 >
->`Choose an operation (+, -, *, /), or (E/e) to exit: * 
->`
 >`Enter the second number, or (E/e) to exit: 10
-
-> **the output:** result is (-200)*(+10)=-2000
-> <br/>
-
-- **division  Process**
-> **Example from the code:** `Enter the fisrt number, or (E/e) to exit: 100000` `
 >
->`Choose an operation (+, -, *, /), or (E/e) to exit: /
->`
->`Enter the second number, or (E/e) to exit: 1000
->`
-> **the output:** result is (100000)/(+1000)=+100
-> <br/>
+> **Output:** `Evaluation result is (-200) * (10) = -2000
+
+- **Division process**
+> **Example:** `Enter the first number, or (E/e) to exit:  100000`
 > 
-- **invalid operator** 
->**Example:** enter the first number ,or (E/e) to exist 10
+>`Choose a process (+, -, *, /), or (E/e) to exit: / `
 >
->choose  an process (+,_,/,*) or (E,e) to exist
+>`Enter the second number, or (E/e) to exit: 1000`
 >
-> **output:** <incorrect oerator try another trial>
-</br>
+> **Output:** `Evaluation result is (+100000) / (+1000) = +100`
 
--**div by zero**
->**Example:** enter the first number or (E,e) to exist 10
->
->choose process(+,-,/,*), or (E/e) to exist:/
->
->enter second number , or (E,e) to exist :0
->
-> **output:**<div by zero is not correct ,,try another trial>
+
+### Exception Handling
+
+- **Invalid operands**
+
+> **Example 1:** `Enter the first number, or (E/e) to exit: b5p`
 > 
-> enter second number,or (E,e) to exist
-> </br>
+> **Output:** `< Invalid correct, try anotner trail ... >`
+>
+>`Enter the first number, or (E/e) to exit: `
+
+> **Example 2:** `Enter the first number, or (E/q) to exit: 5`
+> 
+>`Choose an operation (+, -, *, /), or (E/e) to exit: + `
+>
+>`Enter the second number, or (E/e) to exit: fffffff4`
+>
+> **Output:** `< Incorrect number, try anothtrialer  ... >`
+>
+>`Enter the second number, or (E/e) to exit: `
+
+- **Invalid operator**
+
+> **Example:** `Enter the first number, or (Q/q) to exit: 10`
+> 
+> `Choose an operation (+, -, *, /), or (Q/q) to exit: 9`
+> 
+> **Output:** `< Incorrect opertor, try again ... >`
+>
+>`Choose an operation (+, -, *, /), or (Q/q) to exit: `
+
+
+>
+
+
 
 
  
