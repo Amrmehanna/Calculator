@@ -129,6 +129,41 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >
 > `Enter the first number, or (E/e) to exit: `
 
+ 3. **overflow in Subtraction** 
+   
+> **Example:** `Enter the first number, or (Q/q) to exit: -1800000000`
+>
+> `Choose an operation (+, -, *, /), or (E/e) to exit: - `
+> 
+> `Enter the second number, or (E/e) to exit: 1800000000`
+>
+> **Output:** `< Due to an overflow, the result was incorrect; please try again >`
+>
+> `Enter the first number, or (E/e) to exit: `
+
+  4. **overflow in Multiplication** 
+   
+> **Example:** `Enter the first number, or (E/e) to exit: 3000000000`
+>
+> `Choose an operation (+, -, *, /), or (E/e) to exit: * `
+> 
+> `Enter the second number, or (E/e) to exit: 5000000000`
+>
+> **Output:** `< Due to an overflow, the result was incorrect; please try again >`
+>
+> `Enter the first number, or (E/e) to exit: `
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Program limitations
 
