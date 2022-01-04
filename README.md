@@ -24,7 +24,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >
 >`Enter the second number, or (E/e) to exit: 100
 >`
-> **the output:** result is (80)-(+100)=-20
+>**the output:** result is (80)-(+100)=-20
 > <br/>
 
 - **Multiplication Process**
@@ -46,7 +46,26 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >`
 > **the output:** result is (100000)/(+1000)=+100
 > <br/>
+- **invalid operator 
+>**Example:** enter the first number ,or (E/e) to exist 10
+>
+>choose  an process (+,_,/,*) or (E,e) to exist
+>
+> **output:** <incorrect oerator try another trial>
+</br>
+
+-**div by zero
+>**Example:** enter the first number or (E,e) to exist 10
+>
+>choose process(+,-,/,*), or (E/e) to exist:/
+>
+>enter second number , or (E,e) to exist :0
+>
+> **output:**<div by zero is not correct ,,try another trial>
 > 
+> enter second number,or (E,e) to exist
+> </br>
+
 
  
 
