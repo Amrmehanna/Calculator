@@ -6,7 +6,7 @@ The program performs arithmetic operations such as  addition, subtraction, multi
 the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 ## Code Features
-**Addition Process**
+- **Addition Process**
 > **Example from the code :** `Enter the fisrt number, or (E/e) to exit: 50`
 > 
 >`Choose an operation (+, -, *, /), or (E/e) to exit:  + `
@@ -35,47 +35,44 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 > **The Output:** `result is (-200) * (+10) = -2000`
 > 
 - **Division process**
-> **Example:** `Enter the first number, or (E/e) to exit:  100000`
+> **Example from the code:** `Enter the first number, or (E/e) to exit:  100000`
 > 
->`Choose a process (+, -, *, /), or (E/e) to exit: / `
+>`Choose an operation (+, -, *, /), or (E/e) to exit: / `
 >
 >`Enter the second number, or (E/e) to exit: 1000`
 >
-> **Output:** `Evaluation result is (+100000) / (+1000) = +100`
+> **The Output:** `Evaluation result is (+100000) / (+1000) = +100`
 
 
-### Exception Handling
+## Handling of Exceptions
 
-- **Invalid operands**
+- **Incorrect operands**
 
-> **Example 1:** `Enter the first number, or (E/e) to exit: b5p`
+> **Example 1:** `Enter the first number, or (E/e) to exit: sd3`
 > 
-> **Output:** `< Incorrect number, try anotner trail ... >`
+> **The Output:** `< invalid number ,try another trial >`
 >
 >`Enter the first number, or (E/e) to exit: `
 
-> **Example 2:** `Enter the first number, or (E/q) to exit: 5`
+> **Example 2:** `Enter the first number, or (E/e) to exit: 9`
 > 
->`Choose an operation (+, -, *, /), or (E/e) to exit: + `
+>`Choose an operation (+, -, *, /), or (E/e) to exit: - `
 >
->`Enter the second number, or (E/e) to exit: fffffff4`
+>`Enter the second number, or (E/e) to exit: efe3`
 >
-> **Output:** `< Incorrect number, try anothtrialer  ... >`
+> **Output:** `< invalid number ,try another trial >`
 >
 >`Enter the second number, or (E/e) to exit: `
 
-- **Invalid operator**
+- **incorrect operator**
 
-> **Example:** `Enter the first number, or (Q/q) to exit: 10`
+> **Example:** `Enter the first number, or (E/e) to exit: 3`
 > 
-> `Choose an operation (+, -, *, /), or (Q/q) to exit: 9`
+> `Choose an operation (+, -, *, /), or (E/e) to exit: `
 > 
-> **Output:** `< Incorrect opertor, try again ... >`
+> **Output:** `< invalid operator ,try another trial >`
 >
->`Choose an operation (+, -, *, /), or (Q/q) to exit: `
-
-
->
+>`Choose an operation (+, -, *, /), or (E/e) to exit: `
 
 
 
@@ -167,7 +164,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 ## Program limitations
 
   1. Does not allow fractions only integer number.
-  2. I'm unable to print the result of a 32-bit numeric multiplication.<br/> 
+  2. Couldn't print the result of a 32-bit numeric multiplication.<br/> 
   hint :(destination of multiplication required the double size of the two register multiplied which is no to be supported )
 
 
