@@ -92,7 +92,27 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
  
 
 
+- **Cases of overflow**
 
+1. **During runtime, in operands** 
+
+
+> **Example 1:** `Enter the first number, or (E/e) to exit: 6666666666`
+>
+> `< Please enter a smaller number because the first one is too big to fit >`
+>
+> **Output:** `Enter the first number, or (E/e) to exit:`
+
+
+> **Example 2:** `Enter the first number, or (E/e) to exit: 6`
+>
+> `Choose an operation (+, -, *, /), or (E/e) to exit: / `
+>
+> `Enter the second number, or (E/e) to exit: 6666666666`
+>
+> **Output:** `< Please enter a smaller number because the second one is too big to fit >`
+>
+>> `Enter the second number, or (E/e) to exit: `
 
 
 
