@@ -78,7 +78,17 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 
 
+- **By dividing by zero**
 
+> **Example:** `Enter the first number, or (E/e) to exit: 8
+>
+> `Choose an operation (+, -, *, /), or (E/e) to exit: / `
+> 
+> `Enter the second number, or (E/e) to exit: 0`
+>
+> **Output:** `< Try again if division by zero isn't working. ... >`
+>
+>`Enter the second number, or (E/e) to exit: 
  
 
 
