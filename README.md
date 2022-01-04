@@ -15,50 +15,43 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >
 > **The Output:** `result is (+50) + (+60) = +110`
  
-<br/>
-
-- **Subtraction Process**
-> **Example from code :** enter the first number or(E/e) to exist :80
+<br/> 
+- **substract Process**
+> **Example from the code:** `Enter the fisrt number, or (E/e) to exit: 80
 > 
->`Choose an operation (+, -, *, /), or (E/e) to exit: - `
+>`Choose an operation (+, -, *, /), or (E/e) to exit:-`
 >
->`Enter the second number, or (E/e) to exit: 100`
->
-> **The Output:** `result is (+80) - (+100) = -20`
-
-<br/>
+>`Enter the second number, or (E/e) to exit: 100
+>`
+> **the output:** result is (80)-(+100)=-20
+> <br/>
 
 - **Multiplication Process**
 > **Example from the code:** `Enter the fisrt number, or (E/e) to exit: -200`
-> 
->`Choose an operation (+, -, *, /), or (E/e) to exit: * `
->
+> `
 >`Enter the second number, or (E/e) to exit: 10`
 >
 >`Choose an operation (+, -, *, /), or (E/e) to exit: * `
 > **the output:** result is (-200)*(+10)=-2000
 > <br/>
- 
-- **division Process**
-> **Example from code:** enter the first number ,or (E,e) to exist :100000
-> 
->`Choose an operation (+, -, *, /), or (E/e) to exit: /
->
->enter the second number ,or(E,e) to exist :1000
->
-> **the output:** result is (-100000)*(+1000)=100
 
-> 
+- **division  Process**
+> **Example from the code:** `Enter the fisrt number, or (E/e) to exit: 100000` `
+>
+>`Enter the second number, or (E/e) to exit: 1000`
+>
+>`Choose an operation (+, -, *, /), or (E/e) to exit: /`
+> **the output:** result is (100000)/(+1000)=+100
 > <br/>
-
-
-
->
->
->
-
 > 
-> 
+
+ 
+
+
+
+
+
+
 
 
 
