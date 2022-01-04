@@ -15,7 +15,8 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >
 > **The Output:** `result is (+50) + (+60) = +110`
  
-<br/> 
+<br/>
+
 - **substract Process**
 > **Example from the code:** `Enter the fisrt number, or (E/e) to exit: 80
 > 
