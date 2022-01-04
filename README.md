@@ -46,7 +46,8 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >`
 > **the output:** result is (100000)/(+1000)=+100
 > <br/>
-- **invalid operator 
+> 
+- **invalid operator** 
 >**Example:** enter the first number ,or (E/e) to exist 10
 >
 >choose  an process (+,_,/,*) or (E,e) to exist
@@ -54,7 +55,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 > **output:** <incorrect oerator try another trial>
 </br>
 
--**div by zero
+-**div by zero**
 >**Example:** enter the first number or (E,e) to exist 10
 >
 >choose process(+,-,/,*), or (E/e) to exist:/
