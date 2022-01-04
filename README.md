@@ -32,7 +32,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >
 >`Enter the second number, or (E/e) to exit: 10`
 >
-> **The Output:** `result is (-200) * (+10) = -2000`
+> **The Output:** `result is (-200) * (+5) = -1000`
 > 
 - **Division process**
 > **Example from the code:** `Enter the first number, or (E/e) to exit:  100000`
