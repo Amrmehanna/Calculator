@@ -29,19 +29,21 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 - **Multiplication Process**
 > **Example from the code:** `Enter the fisrt number, or (E/e) to exit: -200`
-> `
->`Enter the second number, or (E/e) to exit: 10`
 >
->`Choose an operation (+, -, *, /), or (E/e) to exit: * `
+>`Choose an operation (+, -, *, /), or (E/e) to exit: * 
+>`
+>`Enter the second number, or (E/e) to exit: 10
+
 > **the output:** result is (-200)*(+10)=-2000
 > <br/>
 
 - **division  Process**
 > **Example from the code:** `Enter the fisrt number, or (E/e) to exit: 100000` `
 >
->`Enter the second number, or (E/e) to exit: 1000`
->
->`Choose an operation (+, -, *, /), or (E/e) to exit: /`
+>`Choose an operation (+, -, *, /), or (E/e) to exit: /
+>`
+>`Enter the second number, or (E/e) to exit: 1000
+>`
 > **the output:** result is (100000)/(+1000)=+100
 > <br/>
 > 
