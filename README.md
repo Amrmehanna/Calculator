@@ -18,7 +18,8 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 <br/>
 
 - **Subtraction Process**
-> enter the first number or(E/e) to exist :80
+> **Example from code :** enter the first number or(E/e) to exist :80
+> 
 >`Choose an operation (+, -, *, /), or (E/e) to exit: - `
 >
 >`Enter the second number, or (E/e) to exit: 100`
@@ -35,14 +36,19 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >`Enter the second number, or (E/e) to exit: 10`
 >
 >`Choose an operation (+, -, *, /), or (E/e) to exit: * `
-> **the output:** result is (-200)*(10)=-2000
+> **the output:** result is (-200)*(+10)=-2000
 > <br/>
  
 - **division Process**
 > **Example from code:** enter the first number ,or (E,e) to exist :100000
+> 
 >`Choose an operation (+, -, *, /), or (E/e) to exit: /
+>
 >enter the second number ,or(E,e) to exist :1000
-> **the output:** result will be (100000)/(1000)=100
+>
+> **the output:** result is (-100000)*(+1000)=100
+
+> 
 > <br/>
 
 
