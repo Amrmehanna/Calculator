@@ -6,33 +6,34 @@ The program performs arithmetic operations such as  addition, subtraction, multi
 the symbols of  arithmatic operations is  ( + , - , * , / ).
 
 ## Code Features
-- **Addition process**
-> **Example:** `Enter the first number, or (E/e) to exit: 50`
+**Addition Process**
+> **Example from the code :** `Enter the fisrt number, or (E/e) to exit: 50`
 > 
->`Choose an process (+, -, *, /), or (E/e) to exit: + `
+>`Choose an operation (+, -, *, /), or (E/e) to exit:  + `
 >
->`Enter the second number, or (E/e) to exit: 60
+>`Enter the second number, or (E/e) to exit: 60`
 >
-> **Output:** `Evaluation result is (+50) + (+60) = +110
+> **the Output:** `result is (+50) + (+60) = +110`
 
-- **Subtraction process**
-> **Example:** `Enter the first number, or (E/e) to exit:  80`
+- **Subtraction Process**
+> **Example from the code:** `Enter the fisrt number, or (E/e) to exit: 80`
 > 
->`Choose an process (+, -, *, /), or (Q/q) to exit: - `
+>`Choose an operation (+, -, *, /), or (E/e) to exit: - `
 >
 >`Enter the second number, or (E/e) to exit: 100`
 >
-> **Output:** `Evaluation result is (+80) - (+100) = -20
+> **The Output:** `result is (+80) - (+100) = -20`
+<br/>
 
-- **Multiplication process**
-> **Example:** `Enter the first number, or (E/e) to exit:  -200`
+- **Multiplication Process**
+> **Example from the code:** `Enter the fisrt number, or (E/e) to exit: -200`
 > 
->`Choose a process (+, -, *, /), or (E/e) to exit: * `
+>`Choose an operation (+, -, *, /), or (E/e) to exit: * `
 >
->`Enter the second number, or (E/e) to exit: 10
+>`Enter the second number, or (E/e) to exit: 10`
 >
-> **Output:** `Evaluation result is (-200) * (10) = -2000
-
+> **The Output:** `result is (-200) * (+10) = -2000`
+> 
 - **Division process**
 > **Example:** `Enter the first number, or (E/e) to exit:  100000`
 > 
