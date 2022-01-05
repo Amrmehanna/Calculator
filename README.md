@@ -41,7 +41,7 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 >
 >`Enter the second number, or (E/e) to exit: 1000`
 >
-> **The Output:** `Evaluation result is (+100000) / (+1000) = +100`
+> **The Output:** `Evaluation result is (+150000) / (+1000) = +150`
 
 
 ## Handling of Exceptions
