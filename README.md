@@ -35,13 +35,13 @@ the symbols of  arithmatic operations is  ( + , - , * , / ).
 > **The Output:** `result is (-200) * (+5) = -1000`
 > 
 - **Division process**
-> **Example from the code:** `Enter the first number, or (E/e) to exit:  100000`
+> **Example from the code:** `Enter the first number, or (E/e) to exit:  150000`
 > 
 >`Choose an operation (+, -, *, /), or (E/e) to exit: / `
 >
 >`Enter the second number, or (E/e) to exit: 1000`
 >
-> **The Output:** `Evaluation result is (+150000) / (+1000) = +150`
+> **The Output:** ` result is (+150000) / (+1000) = +150`
 
 
 ## Handling of Exceptions
